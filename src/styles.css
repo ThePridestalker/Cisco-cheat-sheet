@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import '~@angular/material/prebuilt-themes/pink-bluegrey.css'; */
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+ html {
+    /* background-color: #000;
+    font-family: "Oswald", Verdana, sans-serif;
+    vertical-align: baseline;
+    line-height: normal; */
+    text-align: center;
+}
+
+.mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 
+    0 3px 5px -1px rgba(0,0,0,.2),
+    0 6px 10px 0 rgba(0,0,0,.14),
+    0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+#center{
+    margin-top: 15px;
+}
+
+ body {
+/*     opacity: 1;
+    color: #ffffff; */
+    margin: 0;
+}
+
+ #content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #151515; */
+    
+} 
+
+.item {
+    display: inline-block;
+    /* font-size: 300%; */
+    /* line-height: 100%; */
+    margin: 0.5%;
+}
+
+.example {
+    display: inline-block;
+    padding: 75px;
+    margin-top: 5%;
+    background-color: #1d1d1d;
+}
+
+pre {
+    text-align: left;
+    /* background-color:#0e0e0e; */
+    /* padding: 10px; */
+}
+/* a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ */
