@@ -1,8 +1,4 @@
-# Cisco Cheat Sheet
-Just check the website ¯\_(ツ)_/¯
-
-
-
+# Cisco Cheat Sheet. Just check the website ¯\\_(ツ)_/¯
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
