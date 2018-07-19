@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Setup Interface",
+        "note": "Router1>enable\nRouter1#configure terminal\nRouter1(config)#interface FastEthernet0/0\nRouter1(config-if)#ip address 192.168.1.1 255.255.255.0\nRouter1(config-if)#no shutdown"
+    },
+    {
+        "title": "XD",
+        "note": "aaaaaaaaaaaaaaaaaaaaaa"
+    }
+]

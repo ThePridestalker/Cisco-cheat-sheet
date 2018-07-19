@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-router',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RouterComponent implements OnInit {
 
-  constructor() { }
+  cards$: Object;
+
+  constructor(private data:DataService) { }
 
   ngOnInit() {
+    this.data.getRouter().subscribe(
+      data => this.cards$ = data
+    )
   }
 
 }

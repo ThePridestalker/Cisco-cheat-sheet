@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+/* import { Observable } from 'rxjs'; */
 
 @Component({
   selector: 'app-switch',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SwitchComponent implements OnInit {
 
-  constructor() { }
+  cards$: Object;
+
+  constructor(private data:DataService) { }
 
   ngOnInit() {
+    this.data.getSwitch().subscribe(
+      data => this.cards$ = data
+    );
+    
   }
 
 }

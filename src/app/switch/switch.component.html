@@ -1,3 +1,11 @@
-<p>
-  switch works!
-</p>
+<h2 class="mat-display-2">SWITCH</h2>
+<h2 class="mat-h2"></h2>
+<span *ngFor="let card of cards$">
+<mat-card>
+  <mat-card-title>{{card.title}}</mat-card-title>
+  <mat-card-content>
+    <pre>{{card.note}}</pre>
+  </mat-card-content>
+</mat-card>
+<br>
+</span>

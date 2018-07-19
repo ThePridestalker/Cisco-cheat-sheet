@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-layer3',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Layer3Component implements OnInit {
 
-  constructor() { }
+  cards$: Object;
+
+  constructor(private data:DataService) { }
 
   ngOnInit() {
+    this.data.getLayer3Switch().subscribe(
+      data => this.cards$ = data
+    )
   }
 
 }
